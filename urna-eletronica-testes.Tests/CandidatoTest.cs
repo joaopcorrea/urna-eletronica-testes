@@ -35,9 +35,11 @@ namespace urna_eletronica_testes.Tests
         public void ValidarQuantidadeVotos_AposNovoVoto_VotosMaisUm(int votosAntes, int votosEsperados)
         {
             // Arrange
-            var candidato = new Candidato("Lula");
-            candidato.Votos = votosAntes;
-            
+            var candidato = new Candidato("Lula")
+            {
+                Votos = votosAntes
+            };
+
             // Act
             candidato.AdicionarVoto();
 

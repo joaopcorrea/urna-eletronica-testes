@@ -18,7 +18,7 @@ namespace urna_eletronica_testes
 
         public void AdicionarVoto()
         {
-
+            Votos++;
         }
 
         public int RetornarVotos()
